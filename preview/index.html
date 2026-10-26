@@ -324,6 +324,7 @@ main{position:relative;display:block;overflow-x:clip}
 .tl{position:relative;padding-left:30px;display:grid;gap:36px;--tp:1}
 .tl:before,.tl:after{content:"";position:absolute;left:0;top:var(--tl-t,0px);bottom:var(--tl-b,0px);width:3px;background:rgba(var(--black-rgb),.16)}
 .tl:after{background:var(--accent-2);transform-origin:top;transform:scaleY(var(--tp))}
+.tl:before,.tl:after{z-index:0}.tl>div{z-index:1}
 .tl>div{position:relative;display:grid;gap:4px}.tl>div:before{content:"";position:absolute;left:-39px;top:.5em;width:15px;height:15px;background:var(--highlight);border:2px solid var(--border);transform:rotate(45deg);z-index:1}
 .tl h3{font:400 clamp(1.5rem,3vw,2.3rem)/1 var(--font-display);text-transform:uppercase}
 .tl .role{font-weight:700}.tl .what{color:var(--fg-muted);max-width:52ch}
@@ -389,7 +390,7 @@ html.modal{overflow:hidden}
  .tl>div:before{transition:transform .4s var(--ease) .15s}
  .js .tl>div:not(.in){opacity:0;transform:translate3d(24px,0,0)}
  .js .tl>div:not(.in):before{transform:scale(0)}
- .js .tl>div.in{opacity:.7}.js .tl>div.in.focus{opacity:1;transition-duration:.4s}
+ .js .tl>div.in{opacity:1}.tl>div.in>*{opacity:.62;transition:opacity .4s}.js .tl>div.in.focus>*{opacity:1}
  .jump .rv,.jump .rv *,.jump .rv:before{transition:none!important}
 }
 /* ---------- PHASE 3: INTERACTION ---------- */
