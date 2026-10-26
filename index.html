@@ -931,8 +931,8 @@ function buildJourney(){var W=mainEl.clientWidth,H=mainEl.offsetHeight,m=innerWi
  var mr=mainEl.getBoundingClientRect();J.stopPts=[];
  $$("#main>section").forEach(function(sct,i){if(sct.id==="work"&&!nar){$$("#work .stop-pin").forEach(function(sp){var r=sp.getBoundingClientRect(),pt=[r.left-mr.left,r.top-mr.top];pts.push(pt);J.stopPts.push(pt)});return}
   pts.push([nar?7:(i%2?W*(1-m):W*m),sct.offsetTop+sct.offsetHeight*.5])});
- var cs=$("#contact"),cb=$("#contact a.btn");if(cs&&cb){pts.pop();var ex=nar?Math.max(7,cb.offsetLeft-12):Math.max(W*m,cb.offsetLeft-16),ey=cs.offsetTop+cb.offsetTop+cb.offsetHeight/2;pts.push([nar?7:W*m,cs.offsetTop+cb.offsetTop-40]);pts.push([ex,ey]);
-  J.bx=cb.offsetLeft+cb.offsetWidth/2;J.by=ey}
+ var cs=$("#contact"),cb=$("#contact a.btn");if(cs&&cb){pts.pop();var mr0=mainEl.getBoundingClientRect(),cr0=cb.getBoundingClientRect(),bL=cr0.left-mr0.left,bT=cr0.top-mr0.top;var ex=nar?Math.max(7,bL-12):Math.max(W*m,bL-16),ey=bT+cb.offsetHeight/2;pts.push([nar?7:W*m,bT-40]);pts.push([ex,ey]);
+  J.bx=bL+cb.offsetWidth/2;J.by=ey}
  var d="M"+pts[0][0].toFixed(1)+" 0";
  for(var k=1;k<pts.length;k++){var a=pts[k-1],b=pts[k],dy=b[1]-a[1];d+=" C"+a[0].toFixed(1)+" "+(a[1]+dy*.55).toFixed(1)+" "+b[0].toFixed(1)+" "+(b[1]-dy*.55).toFixed(1)+" "+b[0].toFixed(1)+" "+b[1].toFixed(1)}
  J.svg.setAttribute("width",W);J.svg.setAttribute("height",H);J.svg.setAttribute("viewBox","0 0 "+W+" "+H);
