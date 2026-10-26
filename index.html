@@ -945,7 +945,7 @@ function buildJourney(){var W=mainEl.clientWidth,H=mainEl.offsetHeight,m=innerWi
 function lenAtY(y){var a=0,b=J.tab.length/2-1;if(!J.tab.length)return 0;if(y<=J.tab[1])return 0;if(y>=J.tab[b*2+1])return J.len;
  while(b-a>1){var m=(a+b)>>1;if(J.tab[m*2+1]<y)a=m;else b=m}var y0=J.tab[a*2+1],y1=J.tab[b*2+1],t0=J.tab[a*2],t1=J.tab[b*2];return y1>y0?t0+(t1-t0)*(y-y0)/(y1-y0):t1}
 function drawJourney(sy,vh){var maxS=Math.max(1,document.documentElement.scrollHeight-vh),k=clamp((sy-(maxS-vh*.9))/(vh*.9),0,1),
-  ty=sy+vh*(.58+.42*k)-J.top,p=rm?1:clamp(lenAtY(ty)/J.len,0,1);landStops(p*J.len,vh);p=Math.round(p*3000)/3000;if(p===J.last)return;J.last=p;
+  ty=sy+vh*(.58+.42*k)-J.top,ty=(J.by!=null&&J.by+J.top-sy<vh*.9)?Math.max(ty,J.by+2):ty,p=rm?1:clamp(lenAtY(ty)/J.len,0,1);landStops(p*J.len,vh);p=Math.round(p*3000)/3000;if(p===J.last)return;J.last=p;
  var off=String(1-p);J.o.style.strokeDashoffset=off;J.i.style.strokeDashoffset=off;
  J.tip.style.opacity=(rm||p<=0)?0:1;if(rm)return;
  var pt=J.i.getPointAtLength(p*J.len);J.tip.setAttribute("transform","translate("+pt.x.toFixed(1)+" "+pt.y.toFixed(1)+")");
