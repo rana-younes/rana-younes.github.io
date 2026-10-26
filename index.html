@@ -679,6 +679,15 @@ main{display:block}
 .sig-name .sig-mark{width:.62em;height:.62em}
 .sig-mark path{stroke-width:3.6}
 @media (max-width:699px){.sig-name{font-size:clamp(2.3rem,11vw,3rem)}}
+
+/* ===== CV download + project results ===== */
+.cta-pair{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.btn--cv{background:var(--bg)}
+.btn--cv-dark{background:var(--fg);color:var(--bg);border-color:var(--border)}
+.sec-contact .btn--cv-dark{background:var(--fg);color:var(--bg)}
+.sec-contact .btn--cv-dark:hover{background:var(--bg);color:var(--fg)}
+.stop-result{margin:0;font:400 clamp(1.15rem,1.7vw,1.6rem)/1.1 var(--font-display);text-transform:uppercase;letter-spacing:.01em;max-width:24ch}
+.card.no-video{cursor:default}
 </style>
 </head>
 <body>
@@ -700,7 +709,7 @@ main{display:block}
       <svg class="zig draw" style="--dd:.65s" viewBox="0 0 600 40" preserveAspectRatio="none" aria-hidden="true"><path class="z1" pathLength="1" d="M6 30L60 12L104 30L156 10L204 30L258 12L306 28L362 12L414 28L520 16"/></svg>
       <p class="sub fd" style="--d:.95s">Turning client ambition into real experiences.</p>
       <div class="cta-row fd" style="--d:1.05s">
-        <a class="btn btn--primary" href="#work">Explore my work <span class="arr" aria-hidden="true">↗</span></a>
+        <span class="cta-pair"><a class="btn btn--primary" href="#work">Explore my work <span class="arr" aria-hidden="true">↗</span></a><a class="btn btn--cv" href="Rana_Younes_CV.pdf" download="Rana_Younes_CV.pdf">Download CV <span class="arr" aria-hidden="true">↓</span></a></span>
         
       </div>
     </div>
@@ -755,6 +764,7 @@ main{display:block}
     <span class="stop-pin" aria-hidden="true"><i></i></span>
     <div class="stop-txt" data-speed=".06">
       <p class="stop-role">Project Manager</p>
+      <p class="stop-result">10M+ views · 3 locations · 36-hour shoot · on radio too</p>
       <ul class="steps" aria-label="What I did"><li>Brief</li><li>Production teams</li><li>Multi-location shoot</li><li>Approvals</li><li>On air</li></ul>
       <p class="stop-line">Led a high-budget, multi-location video campaign, managing production teams, timelines and approvals.</p>
     </div>
@@ -764,6 +774,7 @@ main{display:block}
     <span class="stop-pin" aria-hidden="true"><i></i></span>
     <div class="stop-txt" data-speed=".06">
       <p class="stop-role">Project Manager &amp; Strategy Lead</p>
+      <p class="stop-result">Every governorate in Egypt · summer roadshow · billboards</p>
       <ul class="steps" aria-label="What I did"><li>Strategy</li><li>Roadshow truck</li><li>Toll-gate sampling</li><li>Billboards</li></ul>
       <p class="stop-line">Led strategy and execution of a nationwide multi-channel launch for Elvan&rsquo;s hard candy line.</p>
     </div>
@@ -773,8 +784,19 @@ main{display:block}
     <span class="stop-pin" aria-hidden="true"><i></i></span>
     <div class="stop-txt" data-speed=".06">
       <p class="stop-role">Project Manager</p>
+      <p class="stop-result">5+ top-tier creators · in-store visits · competitions and prizes</p>
       <ul class="steps" aria-label="What I did"><li>Brief</li><li>Store visits</li><li>Recipes &amp; hacks</li><li>Vertical content</li></ul>
       <p class="stop-line">Influencers visited Kazyon stores across governorates, sharing recipes, tips and hacks in vertical, post-produced content.</p>
+    </div>
+  </div>
+  <div class="stop" style="--r:1.4deg">
+    <div class="card rv no-video" aria-label="Ministry of Culture event video"><span class="img"><span class="par"><span class="media"><span class="zoom" style="background:var(--accent-2) url(media/ministry-culture-poster.jpg) center/cover"></span></span></span></span><span class="ttl-wrap" data-speed=".1"><span class="ttl"><span class="t-name">Ministry of Culture</span><em>KSA · Event video</em></span></span></div>
+    <span class="stop-pin" aria-hidden="true"><i></i></span>
+    <div class="stop-txt" data-speed=".06">
+      <p class="stop-role">Project Manager</p>
+      <p class="stop-result">Ministry event · featuring the Minister</p>
+      <ul class="steps" aria-label="What I did"><li>Brief</li><li>Production</li><li>Client reviews</li><li>Final approval</li></ul>
+      <p class="stop-line">Delivered a video for a Ministry of Culture event in KSA featuring the Minister, from brief to final approval.</p>
     </div>
   </div>
   </div>
@@ -795,7 +817,7 @@ main{display:block}
       <h2 class="disp mk rv"><span class="ln"><span>The route</span></span><span class="ln"><span>so far</span></span></h2>
     </div>
     <div class="tl">
-      <div class="rv"><p class="when">Aug 2023 – Apr 2026</p><h3>Leap Communications</h3><p class="role">Account Executive → Senior Account Executive</p><p class="what">Promoted in Aug 2025. Led integrated ATL, digital and influencer campaigns across multiple concurrent accounts, fully remote from Jan 2026.</p></div>
+      <div class="rv"><p class="when">Aug 2023 – Apr 2026</p><h3>Leap Communications</h3><p class="role">Account Executive → Senior Account Executive</p><p class="what">Promoted in Aug 2025. Led integrated ATL, digital and influencer campaigns across multiple concurrent accounts. From Jan to Apr 2026 I stayed on remotely, alongside my full-time role at Envision.</p></div>
       <div class="rv"><p class="when">Jan 2026 – Jun 2026</p><h3>Envision Marketing &amp; Advertising</h3><p class="role">Account Manager</p><p class="what">BTL accounts for leading pharma brands across Egypt, KSA and UAE; events and on-ground activations.</p></div>
       <div class="rv"><p class="when">Jun 2026 – Present</p><h3>5dVR</h3><p class="role">Project Manager</p><p class="what">End-to-end delivery of immersive and AI projects, from client brief to launch.</p></div>
     </div>
@@ -807,7 +829,7 @@ main{display:block}
   <div class="deco d-ccur" data-speed=".3" aria-hidden="true"><span class="dz"><svg viewBox="0 0 11 16" shape-rendering="crispEdges"><rect x="0" y="0" width="1" height="1" fill="var(--border)"/><rect x="0" y="1" width="1" height="1" fill="var(--border)"/><rect x="1" y="1" width="1" height="1" fill="var(--border)"/><rect x="0" y="2" width="1" height="1" fill="var(--border)"/><rect x="1" y="2" width="1" height="1" fill="var(--pop)"/><rect x="2" y="2" width="1" height="1" fill="var(--border)"/><rect x="0" y="3" width="1" height="1" fill="var(--border)"/><rect x="1" y="3" width="1" height="1" fill="var(--pop)"/><rect x="2" y="3" width="1" height="1" fill="var(--pop)"/><rect x="3" y="3" width="1" height="1" fill="var(--border)"/><rect x="0" y="4" width="1" height="1" fill="var(--border)"/><rect x="1" y="4" width="1" height="1" fill="var(--pop)"/><rect x="2" y="4" width="1" height="1" fill="var(--pop)"/><rect x="3" y="4" width="1" height="1" fill="var(--pop)"/><rect x="4" y="4" width="1" height="1" fill="var(--border)"/><rect x="0" y="5" width="1" height="1" fill="var(--border)"/><rect x="1" y="5" width="1" height="1" fill="var(--pop)"/><rect x="2" y="5" width="1" height="1" fill="var(--pop)"/><rect x="3" y="5" width="1" height="1" fill="var(--pop)"/><rect x="4" y="5" width="1" height="1" fill="var(--pop)"/><rect x="5" y="5" width="1" height="1" fill="var(--border)"/><rect x="0" y="6" width="1" height="1" fill="var(--border)"/><rect x="1" y="6" width="1" height="1" fill="var(--pop)"/><rect x="2" y="6" width="1" height="1" fill="var(--pop)"/><rect x="3" y="6" width="1" height="1" fill="var(--pop)"/><rect x="4" y="6" width="1" height="1" fill="var(--pop)"/><rect x="5" y="6" width="1" height="1" fill="var(--pop)"/><rect x="6" y="6" width="1" height="1" fill="var(--border)"/><rect x="0" y="7" width="1" height="1" fill="var(--border)"/><rect x="1" y="7" width="1" height="1" fill="var(--pop)"/><rect x="2" y="7" width="1" height="1" fill="var(--pop)"/><rect x="3" y="7" width="1" height="1" fill="var(--pop)"/><rect x="4" y="7" width="1" height="1" fill="var(--pop)"/><rect x="5" y="7" width="1" height="1" fill="var(--pop)"/><rect x="6" y="7" width="1" height="1" fill="var(--pop)"/><rect x="7" y="7" width="1" height="1" fill="var(--border)"/><rect x="0" y="8" width="1" height="1" fill="var(--border)"/><rect x="1" y="8" width="1" height="1" fill="var(--pop)"/><rect x="2" y="8" width="1" height="1" fill="var(--pop)"/><rect x="3" y="8" width="1" height="1" fill="var(--pop)"/><rect x="4" y="8" width="1" height="1" fill="var(--pop)"/><rect x="5" y="8" width="1" height="1" fill="var(--pop)"/><rect x="6" y="8" width="1" height="1" fill="var(--pop)"/><rect x="7" y="8" width="1" height="1" fill="var(--pop)"/><rect x="8" y="8" width="1" height="1" fill="var(--border)"/><rect x="0" y="9" width="1" height="1" fill="var(--border)"/><rect x="1" y="9" width="1" height="1" fill="var(--pop)"/><rect x="2" y="9" width="1" height="1" fill="var(--pop)"/><rect x="3" y="9" width="1" height="1" fill="var(--pop)"/><rect x="4" y="9" width="1" height="1" fill="var(--pop)"/><rect x="5" y="9" width="1" height="1" fill="var(--border)"/><rect x="6" y="9" width="1" height="1" fill="var(--border)"/><rect x="7" y="9" width="1" height="1" fill="var(--border)"/><rect x="8" y="9" width="1" height="1" fill="var(--border)"/><rect x="9" y="9" width="1" height="1" fill="var(--border)"/><rect x="0" y="10" width="1" height="1" fill="var(--border)"/><rect x="1" y="10" width="1" height="1" fill="var(--pop)"/><rect x="2" y="10" width="1" height="1" fill="var(--pop)"/><rect x="3" y="10" width="1" height="1" fill="var(--border)"/><rect x="4" y="10" width="1" height="1" fill="var(--pop)"/><rect x="5" y="10" width="1" height="1" fill="var(--pop)"/><rect x="6" y="10" width="1" height="1" fill="var(--border)"/><rect x="0" y="11" width="1" height="1" fill="var(--border)"/><rect x="1" y="11" width="1" height="1" fill="var(--pop)"/><rect x="2" y="11" width="1" height="1" fill="var(--border)"/><rect x="4" y="11" width="1" height="1" fill="var(--border)"/><rect x="5" y="11" width="1" height="1" fill="var(--pop)"/><rect x="6" y="11" width="1" height="1" fill="var(--pop)"/><rect x="7" y="11" width="1" height="1" fill="var(--border)"/><rect x="0" y="12" width="1" height="1" fill="var(--border)"/><rect x="1" y="12" width="1" height="1" fill="var(--border)"/><rect x="4" y="12" width="1" height="1" fill="var(--border)"/><rect x="5" y="12" width="1" height="1" fill="var(--pop)"/><rect x="6" y="12" width="1" height="1" fill="var(--pop)"/><rect x="7" y="12" width="1" height="1" fill="var(--border)"/><rect x="0" y="13" width="1" height="1" fill="var(--border)"/><rect x="5" y="13" width="1" height="1" fill="var(--border)"/><rect x="6" y="13" width="1" height="1" fill="var(--pop)"/><rect x="7" y="13" width="1" height="1" fill="var(--pop)"/><rect x="8" y="13" width="1" height="1" fill="var(--border)"/><rect x="5" y="14" width="1" height="1" fill="var(--border)"/><rect x="6" y="14" width="1" height="1" fill="var(--pop)"/><rect x="7" y="14" width="1" height="1" fill="var(--pop)"/><rect x="8" y="14" width="1" height="1" fill="var(--border)"/><rect x="6" y="15" width="1" height="1" fill="var(--border)"/><rect x="7" y="15" width="1" height="1" fill="var(--border)"/></svg></span></div>
   <h2 class="disp mk rv"><span class="ln"><span>To be continued…</span></span><span class="ln"><span>With <span class="word-hl">you?</span></span></span></h2>
   <div class="contact-row rv up"><div><p class="eb">Email</p><a class="big" href="mailto:ranayounes44@gmail.com">ranayounes44@gmail.com</a></div><div><p class="eb">LinkedIn</p><a class="big" href="https://linkedin.com/in/rana-younes-eg">linkedin.com/in/rana-younes-eg</a></div></div>
-  <a class="btn rv up" href="mailto:ranayounes44@gmail.com">Start a conversation <span class="arr" aria-hidden="true">→</span></a>
+  <span class="cta-pair rv up"><a class="btn" href="mailto:ranayounes44@gmail.com">Start a conversation <span class="arr" aria-hidden="true">→</span></a><a class="btn btn--cv-dark" href="Rana_Younes_CV.pdf" download="Rana_Younes_CV.pdf">Download CV <span class="arr" aria-hidden="true">↓</span></a></span>
   <p class="eb foot2"><span>© 2026 Rana Younes</span><span>Cairo, Egypt</span></p>
 </section>
 </main>
