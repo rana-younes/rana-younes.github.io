@@ -4,8 +4,19 @@
 <meta charset="utf-8">
 <meta name="theme-color" content="#F4F0E8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Rana Younes Portfolio (preview)</title><meta name="robots" content="noindex">
-<meta name="description" content="Rana Younes. Connecting client ambition with creative execution.">
+<title>Rana Younes · Account &amp; Project Manager (preview)</title><meta name="robots" content="noindex">
+<meta name="description" content="Account & Project Manager with 3 years of agency experience across Egypt, KSA and UAE. Kazyon, Elvan, Lulu, Misr Pharmacies and more.">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Rana Younes">
+<meta property="og:title" content="Rana Younes · Account & Project Manager">
+<meta property="og:description" content="3 years of agency experience across Egypt, KSA and UAE. Campaigns, launches and events from brief to launch.">
+<meta property="og:url" content="https://rana-younes.github.io/">
+<meta property="og:image" content="https://rana-younes.github.io/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Rana Younes, Account & Project Manager">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://rana-younes.github.io/og.jpg">
 <script>document.documentElement.className="js"</script>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Caveat:wght@600&family=Permanent+Marker&family=Rock+Salt&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -688,6 +699,12 @@ main{display:block}
 .sec-contact .btn--cv-dark:hover{background:var(--bg);color:var(--fg)}
 .stop-result{margin:0;font:400 clamp(1.15rem,1.7vw,1.6rem)/1.1 var(--font-display);text-transform:uppercase;letter-spacing:.01em;max-width:24ch}
 .card.no-video{cursor:default}
+
+/* ===== "open to roles" tag in the hero ===== */
+.open-tag{display:inline-flex;align-items:center;gap:9px;margin:0 0 clamp(14px,2.4vh,22px);padding:6px 12px 6px 10px;background:var(--tile);border:2px solid var(--border);box-shadow:3px 3px 0 var(--shadow-hard);font:700 clamp(.66rem,.8vw,.76rem)/1.2 var(--font-mono);letter-spacing:.05em;text-transform:uppercase;color:var(--fg)}
+.open-dot{position:relative;width:9px;height:9px;border-radius:50%;background:#2DB34A;flex:none}
+@media (prefers-reduced-motion:no-preference){.open-dot:after{content:"";position:absolute;inset:0;border-radius:50%;background:#2DB34A;animation:openPing 1.8s cubic-bezier(0,0,.2,1) infinite}@keyframes openPing{75%,100%{transform:scale(2.6);opacity:0}}}
+@media (max-width:699px){.open-tag{font-size:.6rem;letter-spacing:.03em;padding:5px 9px;gap:7px}}
 </style>
 </head>
 <body>
@@ -701,7 +718,8 @@ main{display:block}
 
   <div class="stage" id="stage">
     <div class="head" data-ps=".04">
-      <p class="eyebrow-r fd" style="--d:.05s">Account management <span aria-hidden="true">×</span> Creative delivery</p>
+      <p class="open-tag fd" style="--d:0s"><span class="open-dot" aria-hidden="true"></span>Open to AM &amp; PM roles · Remote or Cairo</p>
+        <p class="eyebrow-r fd" style="--d:.05s">Account management <span aria-hidden="true">×</span> Creative delivery</p>
       <h1 class="disp">
         <span class="ln"><span style="--d:.15s">Good ideas.</span></span>
         <span class="ln"><span style="--d:.28s"><span class="hl">Well</span> delivered.</span></span>
